@@ -3,7 +3,7 @@ using namespace std;
 void insertElement(int *arr, int pos, int num, int &n){
     if (pos > n || pos < 0){
         cout<<"error"<<endl;
-       
+       return;
     }
     for(int i = n; i > pos; i--){
         arr[i] = arr[i - 1];
@@ -14,7 +14,7 @@ void insertElement(int *arr, int pos, int num, int &n){
 void deleteElement(int *arr, int pos, int &n){
     if (pos > n || pos < 0){
         cout<<"error"<<endl;
-        
+        return;
     }
     for (int i = pos; i < n - 1; i++){
         arr[i] = arr[i + 1];
